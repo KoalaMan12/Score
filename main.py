@@ -1,18 +1,28 @@
 import turtle
 
-turtle.hideturtle()
-turtle.color("White")
-turtle.screensize(bg="black")
+# Create the first turtle and set its properties
+turtle1 = turtle.Turtle()
+turtle1.color("red")
+turtle1.shape("turtle")
+turtle1.penup()
+turtle1.goto(-100, 0)
 
-score = (1)
+# Create the second turtle and set its properties
+turtle2 = turtle.Turtle()
+turtle2.color("green")
+turtle2.shape("turtle")
+turtle2.penup()
 
-# write text
-turtle.write(score)
+# Create the third turtle and set its properties
+turtle3 = turtle.Turtle()
+turtle3.color("blue")
+turtle3.shape("turtle")
+turtle3.penup()
+turtle3.goto(100, 0)
 
-while True:
+# Make the turtles move forward a bit
+turtle1.forward(50)
+turtle2.forward(50)
+turtle3.forward(50)
 
-  if input() == ("h"):
-    score+=(1)
-  
-  turtle.clear()
-  turtle.write(score)
+turtle.done()
